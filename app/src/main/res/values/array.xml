@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="create_table_queries">
+
+        <!-- If there is an apostrophe (') in string, it can be escaped by enclosing the string in double-quotes ("") -->
+
+        <item>"CREATE TABLE IF NOT EXISTS `listOfSchools` (
+                `schoolId` int(11) NOT NULL,
+                `schoolName` varchar(256),
+                `schoolType` varchar(256),
+                `feeCurrency` varchar(50),
+                `schoolAdd` varchar(256),
+                `schoolAddCity` varchar(256),
+                `schoolAddCountry` varchar(256),
+                `schoolEmail` varchar(256) DEFAULT NULL,
+                `schoolPhone` varchar(256) DEFAULT NULL,
+                `principalName` varchar(256) DEFAULT NULL,
+                `principalPhone` varchar(256) DEFAULT NULL,
+                `openingTime` varchar(100),
+                `closingTime` varchar(100) DEFAULT NULL,
+                `isActive` tinyint(1) NOT NULL DEFAULT '1',
+                PRIMARY KEY (`schoolId`))"
+        </item>
+    </string-array>
+
+</resources>

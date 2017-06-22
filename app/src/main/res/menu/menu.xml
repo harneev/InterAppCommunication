@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/show_db"
+        android:orderInCategory="4"
+        android:title="Show DB"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/inflate_db"
+        android:orderInCategory="4"
+        android:title="Inflate DB"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
