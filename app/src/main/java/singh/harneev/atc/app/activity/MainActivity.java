@@ -3,10 +3,11 @@ package singh.harneev.atc.app.activity;
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import singh.harneev.atc.R;
 import singh.harneev.atc.contentprovider.CPWrapper;
