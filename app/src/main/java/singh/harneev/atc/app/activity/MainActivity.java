@@ -10,9 +10,6 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import singh.harneev.atc.R;
-import singh.harneev.atc.contentprovider.CPWrapper;
-import singh.harneev.atc.contentprovider.dbhelper.AndroidDatabaseManager;
-import singh.harneev.atc.contentprovider.dbhelper.DBHelper;
 import singh.harneev.atc.contentprovider.dbio.MyCSVFileReader;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,11 +36,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.inflate_db:
 
                 MyCSVFileReader.openDialogToReadCSV(this, MainActivity.this);
-                break;
-
-            case R.id.show_db:
-
-                startActivity(new Intent(MainActivity.this, AndroidDatabaseManager.class));
                 break;
         }
 

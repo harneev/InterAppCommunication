@@ -11,21 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".app.activity.MainActivity">
+        <activity
+            android:name=".app.activity.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".contentprovider.dbhelper.AndroidDatabaseManager"
-            android:theme="@style/Theme.AppCompat.Light" />
-
         <!-- AIDL Service -->
         <service
             android:name=".connection.ipc.DBService"
+            android:enabled="true"
             android:exported="true"
             android:process=":remote">
             <intent-filter>
