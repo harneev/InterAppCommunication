@@ -6,11 +6,11 @@ plugins {
 apply { from(rootProject.file("android-common.gradle")) }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion project.compileSdkVersion
     defaultConfig {
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
         applicationId "singh.harneev.atc"
-        minSdkVersion 24
-        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
