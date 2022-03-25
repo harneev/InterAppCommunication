@@ -1,4 +1,4 @@
-## ITC - inter app communication
+## ATC - inter app communication
 
 **Modules covered in this project**
 - :app (base app which stores database)
